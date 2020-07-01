@@ -68,3 +68,9 @@ A requestor should not throw an exception. It should communicate all failures th
 ### Callback
 
 A callback function takes two arguments: `value` and `reason`.
+
+    my_little_callback(value, reason)
+
+If `value` is `undefined`, then failure is being signalled. `reason` may contain information explaining the failure. If `value` is not `undefined`, then success is being signalled and `value` contains the result.
+
+### Cancel
