@@ -39,3 +39,12 @@ A factory function is any function that returns a requestor function. Parseq pro
     parseq.race(
         requestor_array,
         time_limit,
+        throttle
+    )
+
+    parseq.sequence(
+        requestor_array,
+        time_limit
+    )
+
+Each of these factories (except for `parallel_object`) takes an array of requestor functions. The `parallel` factory can take two arrays of requestor functions.
