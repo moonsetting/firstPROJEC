@@ -48,3 +48,9 @@ A factory function is any function that returns a requestor function. Parseq pro
     )
 
 Each of these factories (except for `parallel_object`) takes an array of requestor functions. The `parallel` factory can take two arrays of requestor functions.
+
+Each of these factory functions returns a requestor function. A factory function may throw an exception if it finds problems in its parameters.
+
+### Requestor
+
+A requestor function is any function that takes a callback and a value.
