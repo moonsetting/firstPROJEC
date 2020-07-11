@@ -108,3 +108,15 @@ The fallback requestor will return a cancel function that can be called when the
         optional_array,
         time_limit,
         time_option,
+        throttle
+    )
+
+`parseq.parallel` returns a requestor that processes many requestors in parallel, producing an array of all of the successful results. It does not add parallelism to JavaScript. It makes it possible for JavaScript to exploit the natural parallelism of the universe.
+
+`parseq.parallel` can take two arrays of requestors: Those that are required to produce results, and those that may optionally produce results. The parallel operation only succeeds if all of the required requestors succeed. Failure of optional requestors does not cause the parallel operation to fail.
+
+The result maps the success values of the required requestors and optional requestors into a single array. The value produced by the first element of the requestors array provides the first element of the result.
+
+If the `time_limit` argument is supplied, then a time limit is imposed. The result must be complete before the time expires.
+
+If there is no time limit, and if there are required requestors, then the parallel operation is finished when all of the required requestors are done. All unfinished optional requestors will be cancelled.
