@@ -156,3 +156,18 @@ If `throttle` is not `undefined` or `0`, then there will be a limit on the numbe
 If the `time_limit` argument is supplied, then if no requestor has been successful in the allotted time, then the race fails, and all pending requestors are cancelled.
 
 If `throttle` is not `undefined` or `0`, then there will be a limit on the number of requestors that will be active at a time.
+
+## Sequence
+
+    parseq.sequence(
+        requestor_array,
+        time_limit
+    )
+
+`parseq.sequence` returns a requestor that processes each requestor in `requestor_array` one at a time. Each of those requestors will be passed the result of the previous requestor as its `value` argument. If all succeed, then the sequence succeeds, giving the result of the last of the requestors. If any fail, then the sequence fails.
+
+If the optional `time_limit` argument is supplied, then if all of the requestors have not all completed in the allotted time, then the sequence fails and the pending requestor is cancelled.
+
+## Demo
+
+A demonstration of parseq is provided in three files:
