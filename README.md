@@ -148,3 +148,11 @@ If `throttle` is not `undefined` or `0`, then there will be a limit on the numbe
     parseq.race(
         requestor_array,
         time_limit,
+        throttle
+    )
+
+`parseq.race` returns a requestor that starts all of the requestors in `requestor_array` in parallel. Its result is the result of the first of those requestors to successfully finish. All of the other requestors will be cancelled. If all of those requestors fail, then the race fails.
+
+If the `time_limit` argument is supplied, then if no requestor has been successful in the allotted time, then the race fails, and all pending requestors are cancelled.
+
+If `throttle` is not `undefined` or `0`, then there will be a limit on the number of requestors that will be active at a time.
