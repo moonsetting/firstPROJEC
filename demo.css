@@ -41,4 +41,5 @@ legend {
     background-color: snow;
     border: 2px solid navy;
     border-radius: 0.5em;
-    cursor
+    cursor: default;
+  
