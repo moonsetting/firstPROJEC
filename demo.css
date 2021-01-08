@@ -47,4 +47,5 @@ legend {
     padding-right: 0.5em;
 }
 
-fieldset:hover, legend:hover
+fieldset:hover, legend:hover {
+    b
