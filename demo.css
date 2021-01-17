@@ -52,4 +52,5 @@ fieldset:hover, legend:hover {
 }
 
 input {
-    border: 2px solid b
+    border: 2px solid black;
+   
