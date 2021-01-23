@@ -54,3 +54,6 @@ fieldset:hover, legend:hover {
 input {
     border: 2px solid black;
     cursor: pointer;
+}
+
+input[v
