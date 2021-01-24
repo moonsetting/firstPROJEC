@@ -56,4 +56,5 @@ input {
     cursor: pointer;
 }
 
-input[value="success"
+input[value="success"]:hover {
+   
