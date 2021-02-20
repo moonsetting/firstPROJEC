@@ -62,4 +62,5 @@ input[value="success"]:hover {
 }
 
 input[value="failure"]:hover {
-    background-color
+    background-color: pink;
+    b
