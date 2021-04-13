@@ -1,3 +1,3 @@
 // demo.js
 
-// This is used by
+// This is used by demo.htm
