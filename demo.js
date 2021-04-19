@@ -1,3 +1,3 @@
 // demo.js
 
-// This is used by demo.html to demonstrate parseq.js. 
+// This is used by demo.html to demonstrate parseq.js. It include
