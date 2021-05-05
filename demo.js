@@ -1,4 +1,4 @@
 // demo.js
 
 // This is used by demo.html to demonstrate parseq.js. It includes a widget
-// function that r
+// function that represents a
