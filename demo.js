@@ -2,4 +2,4 @@
 
 // This is used by demo.html to demonstrate parseq.js. It includes a widget
 // function that represents a service factory, a show callback that displays the
-// final result, and a parseq ro
+// final result, and a parseq routine written a
