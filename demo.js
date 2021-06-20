@@ -11,4 +11,5 @@
 */
 
 /*property
-    addEventListener, appendChild, backgroundColor, body, createEl
+    addEventListener, appendChild, backgroundColor, body, createElement,
+  
