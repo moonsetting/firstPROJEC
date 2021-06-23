@@ -12,4 +12,4 @@
 
 /*property
     addEventListener, appendChild, backgroundColor, body, createElement,
-    createTextNode, fallba
+    createTextNode, fallback, getElementB
