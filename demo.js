@@ -13,4 +13,4 @@
 /*property
     addEventListener, appendChild, backgroundColor, body, createElement,
     createTextNode, fallback, getElementById, location, onclick, parallel,
-    race, reload, sequence, st
+    race, reload, sequence, stringify, 
