@@ -16,4 +16,4 @@
     race, reload, sequence, stringify, style, type, value
 */
 
-impor
+import par
