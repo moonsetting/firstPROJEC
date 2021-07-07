@@ -16,4 +16,6 @@
     race, reload, sequence, stringify, style, type, value
 */
 
-import parseq from "
+import parseq from "./parseq.js";
+
+docum
