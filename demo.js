@@ -18,4 +18,4 @@
 
 import parseq from "./parseq.js";
 
-document.getElement
+document.getElementById("res
