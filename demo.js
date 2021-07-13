@@ -18,4 +18,4 @@
 
 import parseq from "./parseq.js";
 
-document.getElementById("reset").o
+document.getElementById("reset").onclick = func
