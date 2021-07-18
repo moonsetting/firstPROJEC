@@ -19,4 +19,4 @@
 import parseq from "./parseq.js";
 
 document.getElementById("reset").onclick = function (ignore) {
-    window.location.re
+    window.location.reload(true);
