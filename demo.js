@@ -23,4 +23,4 @@ document.getElementById("reset").onclick = function (ignore) {
 };
 
 function widget(name) {
-    return function widget_requestor(callbac
+    return function widget_requestor(callback, value) 
