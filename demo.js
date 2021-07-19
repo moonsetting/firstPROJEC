@@ -22,4 +22,4 @@ document.getElementById("reset").onclick = function (ignore) {
     window.location.reload(true);
 };
 
-function widget
+function widget(name) 
