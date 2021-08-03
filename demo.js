@@ -27,4 +27,5 @@ function widget(name) {
         let result = (
             value !== undefined
             ? value + ">" + name
-            : na
+            : name
+      
