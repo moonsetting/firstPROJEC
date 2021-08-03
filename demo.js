@@ -26,4 +26,5 @@ function widget(name) {
     return function widget_requestor(callback, value) {
         let result = (
             value !== undefined
-            ? value + ">" + na
+            ? value + ">" + name
+        
