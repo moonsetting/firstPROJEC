@@ -29,4 +29,4 @@ function widget(name) {
             ? value + ">" + name
             : name
         );
-        let demo 
+        let demo = document.
