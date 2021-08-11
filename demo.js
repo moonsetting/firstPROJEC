@@ -29,4 +29,5 @@ function widget(name) {
             ? value + ">" + name
             : name
         );
-        let demo = document.getElementB
+        let demo = document.getElementById("demo");
+ 
