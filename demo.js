@@ -30,4 +30,4 @@ function widget(name) {
             : name
         );
         let demo = document.getElementById("demo");
- 
+        l
