@@ -30,4 +30,5 @@ function widget(name) {
             : name
         );
         let demo = document.getElementById("demo");
-        let fieldset = document.createElement("fieldset
+        let fieldset = document.createElement("fieldset");
+        le
