@@ -31,4 +31,4 @@ function widget(name) {
         );
         let demo = document.getElementById("demo");
         let fieldset = document.createElement("fieldset");
-        let legend = do
+        let legend = document.crea
