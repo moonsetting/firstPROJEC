@@ -37,4 +37,4 @@ function widget(name) {
         fieldset.appendChild(legend);
         fieldset.appendChild(success);
         fieldset.appendChild(failure);
-        legend.a
+        legend.appendChild(docu
