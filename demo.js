@@ -36,4 +36,5 @@ function widget(name) {
         let failure = document.createElement("input");
         fieldset.appendChild(legend);
         fieldset.appendChild(success);
-        fieldset.appendChild(failure
+        fieldset.appendChild(failure);
+        legend.a
