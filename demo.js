@@ -40,4 +40,4 @@ function widget(name) {
         legend.appendChild(document.createTextNode(name));
         success.type = "button";
         success.value = "success";
-        success.a
+        success.addEvent
