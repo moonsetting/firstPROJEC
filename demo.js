@@ -41,4 +41,5 @@ function widget(name) {
         success.type = "button";
         success.value = "success";
         success.addEventListener(
-            "cli
+            "click",
+    
