@@ -42,4 +42,4 @@ function widget(name) {
         success.value = "success";
         success.addEventListener(
             "click",
-            functio
+            function success
