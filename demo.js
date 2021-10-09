@@ -43,4 +43,4 @@ function widget(name) {
         success.addEventListener(
             "click",
             function success_handler() {
-                fieldset.style.backgro
+                fieldset.style.backgroundColor
