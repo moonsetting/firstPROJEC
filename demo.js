@@ -43,4 +43,5 @@ function widget(name) {
         success.addEventListener(
             "click",
             function success_handler() {
-                fieldset.style.backgroundColor = "lightgr
+                fieldset.style.backgroundColor = "lightgreen";
+  
