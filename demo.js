@@ -44,4 +44,4 @@ function widget(name) {
             "click",
             function success_handler() {
                 fieldset.style.backgroundColor = "lightgreen";
-           
+                retur
