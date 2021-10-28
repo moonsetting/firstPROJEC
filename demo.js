@@ -45,4 +45,5 @@ function widget(name) {
             function success_handler() {
                 fieldset.style.backgroundColor = "lightgreen";
                 return callback(result);
-            
+            },
+           
