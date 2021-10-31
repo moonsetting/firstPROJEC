@@ -48,4 +48,4 @@ function widget(name) {
             },
             false
         );
-        fail
+        failure.type = 
