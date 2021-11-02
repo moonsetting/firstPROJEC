@@ -48,4 +48,5 @@ function widget(name) {
             },
             false
         );
-        failure.type = 
+        failure.type = "button";
+ 
