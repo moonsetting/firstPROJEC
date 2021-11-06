@@ -51,4 +51,4 @@ function widget(name) {
         failure.type = "button";
         failure.value = "failure";
         failure.addEventListener(
-    
+            "cli
