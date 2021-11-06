@@ -49,4 +49,4 @@ function widget(name) {
             false
         );
         failure.type = "button";
-        fai
+        failure.value 
