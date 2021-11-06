@@ -50,4 +50,4 @@ function widget(name) {
         );
         failure.type = "button";
         failure.value = "failure";
-        fai
+        failure.addEven
