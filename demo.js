@@ -50,4 +50,5 @@ function widget(name) {
         );
         failure.type = "button";
         failure.value = "failure";
-        failure.addEventListe
+        failure.addEventListener(
+    
