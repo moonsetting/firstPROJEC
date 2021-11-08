@@ -52,4 +52,4 @@ function widget(name) {
         failure.value = "failure";
         failure.addEventListener(
             "click",
-            function f
+            function failure_han
