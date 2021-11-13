@@ -53,4 +53,4 @@ function widget(name) {
         failure.addEventListener(
             "click",
             function failure_handler() {
-                fieldset.style.bac
+                fieldset.style.backgroundColor = 
