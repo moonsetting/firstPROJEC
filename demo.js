@@ -53,4 +53,4 @@ function widget(name) {
         failure.addEventListener(
             "click",
             function failure_handler() {
-                fieldset.sty
+                fieldset.style.bac
