@@ -56,3 +56,4 @@ function widget(name) {
                 fieldset.style.backgroundColor = "pink";
                 return callback(undefined, result);
             },
+            false
