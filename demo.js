@@ -57,3 +57,4 @@ function widget(name) {
                 return callback(undefined, result);
             },
             false
+       
