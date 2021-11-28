@@ -59,4 +59,4 @@ function widget(name) {
             false
         );
         demo.appendChild(fieldset);
-        r
+        return f
