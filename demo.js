@@ -58,4 +58,4 @@ function widget(name) {
             },
             false
         );
-        
+        demo.appendChild(fi
