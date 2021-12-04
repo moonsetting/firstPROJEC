@@ -65,4 +65,4 @@ function widget(name) {
     };
 }
 
-functi
+function show(valu
