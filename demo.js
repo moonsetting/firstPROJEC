@@ -67,4 +67,4 @@ function widget(name) {
 
 function show(value, reason) {
     let body;
-    let
+    let color;
