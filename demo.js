@@ -69,4 +69,5 @@ function show(value, reason) {
     let body;
     let color;
     let demo = document.getElementById("demo");
-    let fieldset = document.createElement("fiel
+    let fieldset = document.createElement("fieldset");
+  
