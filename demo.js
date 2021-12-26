@@ -72,4 +72,5 @@ function show(value, reason) {
     let fieldset = document.createElement("fieldset");
     let legend = document.createElement("legend");
     let result;
-    let ti
+    let title;
+    if 
