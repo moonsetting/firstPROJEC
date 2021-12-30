@@ -73,4 +73,4 @@ function show(value, reason) {
     let legend = document.createElement("legend");
     let result;
     let title;
-    if (value 
+    if (value !== undefin
