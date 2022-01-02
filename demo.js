@@ -76,4 +76,5 @@ function show(value, reason) {
     if (value !== undefined) {
         result = JSON.stringify(value);
         title = "success";
-        color = "lightgre
+        color = "lightgreen";
+       
