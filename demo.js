@@ -77,4 +77,4 @@ function show(value, reason) {
         result = JSON.stringify(value);
         title = "success";
         color = "lightgreen";
-        body = "m
+        body = "mintcrea
