@@ -79,4 +79,5 @@ function show(value, reason) {
         color = "lightgreen";
         body = "mintcream";
     } else {
-        result = JSON.strin
+        result = JSON.stringify(reason);
+ 
