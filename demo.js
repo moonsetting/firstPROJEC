@@ -81,4 +81,4 @@ function show(value, reason) {
     } else {
         result = JSON.stringify(reason);
         title = "failure";
-  
+        colo
