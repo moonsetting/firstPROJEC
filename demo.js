@@ -81,4 +81,5 @@ function show(value, reason) {
     } else {
         result = JSON.stringify(reason);
         title = "failure";
-        color = "pin
+        color = "pink";
+       
