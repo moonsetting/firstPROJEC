@@ -82,4 +82,4 @@ function show(value, reason) {
         result = JSON.stringify(reason);
         title = "failure";
         color = "pink";
-       
+        body = "mist
