@@ -84,4 +84,4 @@ function show(value, reason) {
         color = "pink";
         body = "mistyrose";
     }
-    fieldset.appendCh
+    fieldset.appendChild(l
