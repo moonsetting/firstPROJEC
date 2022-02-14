@@ -84,4 +84,5 @@ function show(value, reason) {
         color = "pink";
         body = "mistyrose";
     }
-    fieldset.appendChild(legend
+    fieldset.appendChild(legend);
+    legend.
