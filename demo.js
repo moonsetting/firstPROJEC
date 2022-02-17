@@ -85,4 +85,4 @@ function show(value, reason) {
         body = "mistyrose";
     }
     fieldset.appendChild(legend);
-    legend.appendChi
+    legend.appendChild(docum
