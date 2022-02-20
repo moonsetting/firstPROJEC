@@ -85,4 +85,5 @@ function show(value, reason) {
         body = "mistyrose";
     }
     fieldset.appendChild(legend);
-    legend.appendChild(document.createTextNode(t
+    legend.appendChild(document.createTextNode(title));
+ 
