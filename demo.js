@@ -86,4 +86,4 @@ function show(value, reason) {
     }
     fieldset.appendChild(legend);
     legend.appendChild(document.createTextNode(title));
-    fieldset.appendChild(document.createT
+    fieldset.appendChild(document.createTextNode(resul
