@@ -87,4 +87,4 @@ function show(value, reason) {
     fieldset.appendChild(legend);
     legend.appendChild(document.createTextNode(title));
     fieldset.appendChild(document.createTextNode(result));
-    field
+    fieldset.style.bac
