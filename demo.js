@@ -88,3 +88,4 @@ function show(value, reason) {
     legend.appendChild(document.createTextNode(title));
     fieldset.appendChild(document.createTextNode(result));
     fieldset.style.backgroundColor = color;
+    l
