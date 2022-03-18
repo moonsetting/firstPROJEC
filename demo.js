@@ -90,4 +90,4 @@ function show(value, reason) {
     fieldset.style.backgroundColor = color;
     legend.style.backgroundColor = color;
     document.body.style.backgroundColor = body;
-    demo.ap
+    demo.appendChi
