@@ -93,4 +93,4 @@ function show(value, reason) {
     demo.appendChild(fieldset);
 }
 
-parseq
+parseq.paral
