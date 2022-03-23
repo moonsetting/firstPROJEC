@@ -98,4 +98,4 @@ parseq.parallel(
         widget("A"),
         parseq.race([
             widget("Race B0"),
-            widge
+            widget("Race B1")
