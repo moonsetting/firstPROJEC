@@ -97,4 +97,5 @@ parseq.parallel(
     [
         widget("A"),
         parseq.race([
-            widget("Rac
+            widget("Race B0"),
+      
