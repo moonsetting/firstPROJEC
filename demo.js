@@ -97,4 +97,4 @@ parseq.parallel(
     [
         widget("A"),
         parseq.race([
-     
+            widg
