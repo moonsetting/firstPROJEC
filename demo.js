@@ -96,4 +96,5 @@ function show(value, reason) {
 parseq.parallel(
     [
         widget("A"),
-        parseq.rac
+        parseq.race([
+     
