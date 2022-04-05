@@ -100,4 +100,4 @@ parseq.parallel(
             widget("Race B0"),
             widget("Race B1"),
             widget("Race B2")
- 
+        ]),
