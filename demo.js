@@ -106,3 +106,4 @@ parseq.parallel(
             widget("Seq C1"),
             widget("Seq C2")
         ]),
+        par
