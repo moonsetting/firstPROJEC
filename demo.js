@@ -107,4 +107,4 @@ parseq.parallel(
             widget("Seq C2")
         ]),
         parseq.sequence([
-      
+            widg
