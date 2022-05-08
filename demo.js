@@ -108,4 +108,5 @@ parseq.parallel(
         ]),
         parseq.sequence([
             widget("Seq D0"),
-            widget
+            widget("Seq D1"),
+  
