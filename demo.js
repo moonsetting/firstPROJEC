@@ -117,4 +117,5 @@ parseq.parallel(
             widget("Fall F2")
         ])
     ],
-    
+    [
+        widge
