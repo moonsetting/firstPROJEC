@@ -118,4 +118,4 @@ parseq.parallel(
         ])
     ],
     [
-        widge
+        widget("Opt Q"),
