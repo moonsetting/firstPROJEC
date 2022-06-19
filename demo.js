@@ -119,4 +119,4 @@ parseq.parallel(
     ],
     [
         widget("Opt Q"),
-        pa
+        parseq.race([
