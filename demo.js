@@ -123,4 +123,5 @@ parseq.parallel(
             widget("Opt Race R0"),
             widget("Opt Race R1"),
             widget("Opt Race R2")
-    
+        ]),
+     
