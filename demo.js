@@ -127,4 +127,4 @@ parseq.parallel(
         parseq.sequence([
             widget("Opt Seq S0"),
             widget("Opt Seq S1"),
-            widget("
+            widget("Opt Seq 
