@@ -134,4 +134,4 @@ parseq.parallel(
             widget("Opt Seq T1"),
             widget("Opt Seq T2")
         ]),
-     
+        parseq.fallbac
