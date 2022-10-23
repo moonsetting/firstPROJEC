@@ -37,3 +37,11 @@ function get_array_length(array, factory_name) {
     if (array === undefined) {
         return 0;
     }
+    throw make_reason(factory_name, "Not an array.", array);
+}
+
+function check_callback(callback, factory_name) {
+    if (typeof callback !== "function" || callback.length !== 2) {
+        throw make_reason(factory_name, "Not a callback function.", callback);
+    }
+}
