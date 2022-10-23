@@ -20,3 +20,20 @@ function make_reason(factory_name, excuse, evidence) {
 
 // Make a reason object. These are used for exceptions and cancellations.
 // They are made from Error objects.
+
+    const reason = new Error("parseq." + factory_name + (
+        excuse === undefined
+        ? ""
+        : ": " + excuse
+    ));
+    reason.evidence = evidence;
+    return reason;
+}
+
+function get_array_length(array, factory_name) {
+    if (Array.isArray(array)) {
+        return array.length;
+    }
+    if (array === undefined) {
+        return 0;
+    }
