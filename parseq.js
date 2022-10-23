@@ -45,3 +45,17 @@ function check_callback(callback, factory_name) {
         throw make_reason(factory_name, "Not a callback function.", callback);
     }
 }
+
+function check_requestors(requestor_array, factory_name) {
+
+// A requestor array contains only requestors. A requestor is a function that
+// takes wun or two arguments: 'callback' and optionally 'initial_value'.
+
+    if (requestor_array.some(function (requestor) {
+        return (
+            typeof requestor !== "function"
+            || requestor.length < 1
+            || requestor.length > 2
+        );
+    })) {
+        throw make_reason(
