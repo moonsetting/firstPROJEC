@@ -75,3 +75,15 @@ function run(
     time_limit,
     throttle = 0
 ) {
+
+// The 'run' function does the work that is common to all of the Parseq
+// factories. It takes the name of the factory, an array of requestors, an
+// initial value, an action callback, a timeout callback, a time limit in
+// milliseconds, and a throttle.
+
+// If all goes well, we call all of the requestor functions in the array. Each
+// of them  might return a cancel function that is kept in the 'cancel_array'.
+
+    let cancel_array = new Array(requestor_array.length);
+    let next_number = 0;
+    let timer_id;
