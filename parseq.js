@@ -70,3 +70,8 @@ function run(
     factory_name,
     requestor_array,
     initial_value,
+    action,
+    timeout,
+    time_limit,
+    throttle = 0
+) {
