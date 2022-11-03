@@ -87,3 +87,13 @@ function run(
     let cancel_array = new Array(requestor_array.length);
     let next_number = 0;
     let timer_id;
+
+// We need 'cancel' and 'start_requestor' functions.
+
+    function cancel(reason = make_reason(factory_name, "Cancel.")) {
+
+// Stop all unfinished business. This can be called when a requestor fails.
+// It can also be called when a requestor succeeds, such as 'race' stopping
+// its losers, or 'parallel' stopping the unfinished optionals.
+
+// If a timer is running, stop it.
