@@ -97,3 +97,17 @@ function run(
 // its losers, or 'parallel' stopping the unfinished optionals.
 
 // If a timer is running, stop it.
+
+        if (timer_id !== undefined) {
+            clearTimeout(timer_id);
+            timer_id = undefined;
+        }
+
+// If anything is still going, cancel it.
+
+        if (cancel_array !== undefined) {
+            cancel_array.forEach(function (cancel) {
+                try {
+                    if (typeof cancel === "function") {
+                        return cancel(reason);
+                    }
