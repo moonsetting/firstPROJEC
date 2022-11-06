@@ -122,3 +122,15 @@ function run(
 // The 'start_requestor' function is not recursive, exactly. It does not
 // directly call itself, but it does return a function that might call
 // 'start_requestor'.
+
+// Start the execution of a requestor, if there are any still waiting.
+
+        if (
+            cancel_array !== undefined
+            && next_number < requestor_array.length
+        ) {
+
+// Each requestor has a number.
+
+            let number = next_number;
+            next_number += 1;
