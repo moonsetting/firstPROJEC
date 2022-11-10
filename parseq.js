@@ -134,3 +134,15 @@ function run(
 
             let number = next_number;
             next_number += 1;
+
+// Call the next requestor, passing in a callback function,
+// saving the cancel function that the requestor might return.
+
+            const requestor = requestor_array[number];
+            try {
+                cancel_array[number] = requestor(
+                    function start_requestor_callback(value, reason) {
+
+// This callback function is called by the 'requestor' when it is done.
+// If we are no longer running, then this call is ignored.
+// For example, it might be a result that is sent back after the time
