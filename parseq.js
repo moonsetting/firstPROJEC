@@ -168,3 +168,11 @@ function run(
 // If there are any requestors that are still waiting to start, then
 // start the next wun. If the next requestor is in a sequence, then it
 // gets the most recent 'value'. The others get the 'initial_value'.
+
+                            setTimeout(start_requestor, 0, (
+                                factory_name === "sequence"
+                                ? value
+                                : initial_value
+                            ));
+                        }
+                    },
