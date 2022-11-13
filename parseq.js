@@ -158,3 +158,13 @@ function run(
                             cancel_array[number] = undefined;
 
 // Call the 'action' function to let the requestor know what happened.
+
+                            action(value, reason, number);
+
+// Clear 'number' so this callback can not be used again.
+
+                            number = undefined;
+
+// If there are any requestors that are still waiting to start, then
+// start the next wun. If the next requestor is in a sequence, then it
+// gets the most recent 'value'. The others get the 'initial_value'.
