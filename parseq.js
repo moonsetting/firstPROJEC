@@ -188,3 +188,18 @@ function run(
                 number = undefined;
                 start_requestor(value);
             }
+        }
+    }
+
+// With the 'cancel' and the 'start_requestor' functions in hand,
+// we can now get to work.
+
+// If a timeout was requested, start the timer.
+
+    if (time_limit !== undefined) {
+        if (typeof time_limit === "number" && time_limit >= 0) {
+            if (time_limit > 0) {
+                timer_id = setTimeout(timeout, time_limit);
+            }
+        } else {
+            throw make_reason(factory_name, "Bad time limit.", time_limit);
