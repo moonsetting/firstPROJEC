@@ -203,3 +203,10 @@ function run(
             }
         } else {
             throw make_reason(factory_name, "Bad time limit.", time_limit);
+        }
+    }
+
+// If we are doing 'race' or 'parallel', we want to start all of the requestors
+// at wunce. However, if there is a 'throttle' in place then we start as many
+// as the 'throttle' allows, and then as each requestor finishes, another is
+// started.
