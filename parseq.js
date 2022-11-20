@@ -210,3 +210,14 @@ function run(
 // at wunce. However, if there is a 'throttle' in place then we start as many
 // as the 'throttle' allows, and then as each requestor finishes, another is
 // started.
+
+// The 'sequence' and 'fallback' factories set 'throttle' to 1 because they
+// process wun at a time and always start another requestor when the
+// previous requestor finishes.
+
+    if (!Number.isSafeInteger(throttle) || throttle < 0) {
+        throw make_reason(factory_name, "Bad throttle.", throttle);
+    }
+    let repeat = Math.min(throttle || Infinity, requestor_array.length);
+    while (repeat > 0) {
+        setTimeout(start_requestor, 0, initial_value);
