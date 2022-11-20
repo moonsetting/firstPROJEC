@@ -176,3 +176,15 @@ function run(
                             ));
                         }
                     },
+                    value
+                );
+
+// Requestors are required to report their failure thru the callback.
+// They are not allowed to throw exceptions. If we happen to catch wun,
+// it is treated as a failure.
+
+            } catch (exception) {
+                action(undefined, exception, number);
+                number = undefined;
+                start_requestor(value);
+            }
