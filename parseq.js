@@ -221,3 +221,10 @@ function run(
     let repeat = Math.min(throttle || Infinity, requestor_array.length);
     while (repeat > 0) {
         setTimeout(start_requestor, 0, initial_value);
+        repeat -= 1;
+    }
+
+// We return 'cancel' which allows the requestor to cancel this work.
+
+    return cancel;
+}
