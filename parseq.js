@@ -242,3 +242,22 @@ function parallel(
 
 // The parallel factory is the most complex of these factories. It can take
 // a second array of requestors that get a more forgiving failure policy.
+// It returns a requestor that produces an array of values.
+
+    let requestor_array;
+
+// There are four cases because 'required_array' and 'optional_array'
+// can both be empty.
+
+    let number_of_required = get_array_length(required_array, factory_name);
+    if (number_of_required === 0) {
+        if (get_array_length(optional_array, factory_name) === 0) {
+
+// If both are empty, then 'requestor_array' is empty.
+
+            requestor_array = [];
+        } else {
+
+// If there is only 'optional_array', then it is the 'requestor_array'.
+
+            requestor_array = optional_array;
