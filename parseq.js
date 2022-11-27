@@ -228,3 +228,11 @@ function run(
 
     return cancel;
 }
+
+// The factories ///////////////////////////////////////////////////////////////
+
+function parallel(
+    required_array,
+    optional_array,
+    time_limit,
+    time_option,
