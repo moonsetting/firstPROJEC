@@ -236,3 +236,9 @@ function parallel(
     optional_array,
     time_limit,
     time_option,
+    throttle,
+    factory_name = "parallel"
+) {
+
+// The parallel factory is the most complex of these factories. It can take
+// a second array of requestors that get a more forgiving failure policy.
