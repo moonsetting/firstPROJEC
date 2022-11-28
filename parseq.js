@@ -269,3 +269,14 @@ function parallel(
 
         if (get_array_length(optional_array, factory_name) === 0) {
             requestor_array = required_array;
+            time_option = undefined;
+
+// If both arrays are provided, we concatenate them together.
+
+        } else {
+            requestor_array = required_array.concat(optional_array);
+            if (time_option !== undefined && typeof time_option !== "boolean") {
+                throw make_reason(
+                    factory_name,
+                    "Bad time_option.",
+                    time_option
