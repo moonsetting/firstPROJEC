@@ -280,3 +280,14 @@ function parallel(
                     factory_name,
                     "Bad time_option.",
                     time_option
+                );
+            }
+        }
+    }
+
+// We check the array and return the requestor.
+
+    check_requestors(requestor_array, factory_name);
+    return function parallel_requestor(callback, initial_value) {
+        check_callback(callback, factory_name);
+        let number_of_pending = requestor_array.length;
