@@ -291,3 +291,13 @@ function parallel(
     return function parallel_requestor(callback, initial_value) {
         check_callback(callback, factory_name);
         let number_of_pending = requestor_array.length;
+        let number_of_pending_required = number_of_required;
+        let results = [];
+        if (number_of_pending === 0) {
+            callback(
+                factory_name === "sequence"
+                ? initial_value
+                : results
+            );
+            return;
+        }
