@@ -301,3 +301,14 @@ function parallel(
             );
             return;
         }
+
+// 'run' gets it started.
+
+        let cancel = run(
+            factory_name,
+            requestor_array,
+            initial_value,
+            function parallel_action(value, reason, number) {
+
+// The action function gets the result of each requestor in the array.
+// 'parallel' wants to return an array of all of the values it sees.
