@@ -312,3 +312,13 @@ function parallel(
 
 // The action function gets the result of each requestor in the array.
 // 'parallel' wants to return an array of all of the values it sees.
+
+                results[number] = value;
+                number_of_pending -= 1;
+
+// If the requestor was wun of the requireds, make sure it was successful.
+// If it failed, then the parallel operation fails. If an optionals requestor
+// fails, we can still continue.
+
+                if (number < number_of_required) {
+                    number_of_pending_required -= 1;
