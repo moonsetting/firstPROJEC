@@ -329,3 +329,12 @@ function parallel(
                         return;
                     }
                 }
+
+// If all have been processed, or if the requireds have all succeeded
+// and we do not have a 'time_option', then we are done.
+
+                if (
+                    number_of_pending < 1
+                    || (
+                        time_option === undefined
+                        && number_of_pending_required < 1
