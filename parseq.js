@@ -338,3 +338,18 @@ function parallel(
                     || (
                         time_option === undefined
                         && number_of_pending_required < 1
+                    )
+                ) {
+                    cancel(make_reason(factory_name, "Optional."));
+                    callback(
+                        factory_name === "sequence"
+                        ? results.pop()
+                        : results
+                    );
+                    callback = undefined;
+                }
+            },
+            function parallel_timeout() {
+
+// When the timer fires, work stops unless we were under the 'false'
+// time option. The 'false' time option puts no time limits on the
