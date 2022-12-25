@@ -371,3 +371,19 @@ function parallel(
 
 // Time has expired. If all of the requireds were successful,
 // then the parallel operation is successful.
+
+                    cancel(reason);
+                    if (number_of_pending_required < 1) {
+                        callback(results);
+                    } else {
+                        callback(undefined, reason);
+                    }
+                    callback = undefined;
+                }
+            },
+            time_limit,
+            throttle
+        );
+        return cancel;
+    };
+}
