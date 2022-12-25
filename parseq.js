@@ -360,3 +360,14 @@ function parallel(
                     factory_name,
                     "Timeout.",
                     time_limit
+                );
+                if (time_option === false) {
+                    time_option = undefined;
+                    if (number_of_pending_required < 1) {
+                        cancel(reason);
+                        callback(results);
+                    }
+                } else {
+
+// Time has expired. If all of the requireds were successful,
+// then the parallel operation is successful.
