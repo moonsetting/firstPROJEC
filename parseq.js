@@ -394,3 +394,16 @@ function parallel_object(
     time_limit,
     time_option,
     throttle
+) {
+
+// 'parallel_object' is similar to 'parallel' except that it takes and
+// produces objects of requestors instead of arrays of requestors. This
+// factory converts the objects to arrays, and the requestor it returns
+// turns them back again. It lets 'parallel' do most of the work.
+
+    const names = [];
+    let required_array = [];
+    let optional_array = [];
+
+// Extract the names and requestors from 'required_object'.
+// We only collect functions with an arity of 1 or 2.
