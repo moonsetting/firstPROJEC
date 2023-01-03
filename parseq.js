@@ -407,3 +407,14 @@ function parallel_object(
 
 // Extract the names and requestors from 'required_object'.
 // We only collect functions with an arity of 1 or 2.
+
+    if (required_object) {
+        if (typeof required_object !== "object") {
+            throw make_reason(
+                "parallel_object",
+                "Type mismatch.",
+                required_object
+            );
+        }
+        Object.keys(required_object).forEach(function (name) {
+            let requestor = required_object[name];
