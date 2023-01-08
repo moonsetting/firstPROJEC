@@ -418,3 +418,15 @@ function parallel_object(
         }
         Object.keys(required_object).forEach(function (name) {
             let requestor = required_object[name];
+            if (
+                typeof requestor === "function"
+                && (requestor.length === 1 || requestor.length === 2)
+            ) {
+                names.push(name);
+                required_array.push(requestor);
+            }
+        });
+    }
+
+// Extract the names and requestors from 'optional_object'.
+// Look for duplicate keys.
