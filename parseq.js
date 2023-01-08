@@ -439,3 +439,13 @@ function parallel_object(
                 optional_object
             );
         }
+        Object.keys(optional_object).forEach(function (name) {
+            let requestor = optional_object[name];
+            if (
+                typeof requestor === "function"
+                && (requestor.length === 1 || requestor.length === 2)
+            ) {
+                if (required_object && required_object[name] !== undefined) {
+                    throw make_reason(
+                        "parallel_object",
+                        "Duplicate name.",
