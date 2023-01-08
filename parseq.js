@@ -449,3 +449,13 @@ function parallel_object(
                     throw make_reason(
                         "parallel_object",
                         "Duplicate name.",
+                        name
+                    );
+                }
+                names.push(name);
+                optional_array.push(requestor);
+            }
+        });
+    }
+
+// Call 'parallel' to get a requestor.
