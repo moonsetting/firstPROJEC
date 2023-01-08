@@ -430,3 +430,12 @@ function parallel_object(
 
 // Extract the names and requestors from 'optional_object'.
 // Look for duplicate keys.
+
+    if (optional_object) {
+        if (typeof optional_object !== "object") {
+            throw make_reason(
+                "parallel_object",
+                "Type mismatch.",
+                optional_object
+            );
+        }
