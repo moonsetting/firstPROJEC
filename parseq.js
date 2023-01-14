@@ -459,3 +459,14 @@ function parallel_object(
     }
 
 // Call 'parallel' to get a requestor.
+
+    const parallel_requestor = parallel(
+        required_array,
+        optional_array,
+        time_limit,
+        time_option,
+        throttle,
+        "parallel_object"
+    );
+
+// Return the parallel object requestor.
