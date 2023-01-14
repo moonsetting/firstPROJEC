@@ -470,3 +470,18 @@ function parallel_object(
     );
 
 // Return the parallel object requestor.
+
+    return function parallel_object_requestor(callback, initial_value) {
+
+// When our requestor is called, we return the result of our parallel requestor.
+
+        return parallel_requestor(
+
+// We pass our callback to the parallel requestor,
+// converting its value into an object.
+
+            function parallel_object_callback(value, reason) {
+                if (value === undefined) {
+                    return callback(undefined, reason);
+                }
+                const object = Object.create(null);
