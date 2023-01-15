@@ -510,3 +510,15 @@ function race(requestor_array, time_limit, throttle) {
         throw make_reason(factory_name, "No requestors.");
     }
     check_requestors(requestor_array, factory_name);
+    return function race_requestor(callback, initial_value) {
+        check_callback(callback, factory_name);
+        let number_of_pending = requestor_array.length;
+        let cancel = run(
+            factory_name,
+            requestor_array,
+            initial_value,
+            function race_action(value, reason, number) {
+                number_of_pending -= 1;
+                if (value !== undefined) {
+
+// We have a winner. Cancel the losers and pass the value to the 'callback'.
