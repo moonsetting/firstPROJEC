@@ -522,3 +522,10 @@ function race(requestor_array, time_limit, throttle) {
                 if (value !== undefined) {
 
 // We have a winner. Cancel the losers and pass the value to the 'callback'.
+
+                    cancel(make_reason(factory_name, "Loser.", number));
+                    callback(value);
+                    callback = undefined;
+                } else if (number_of_pending < 1) {
+
+// There was no winner. Signal a failure.
