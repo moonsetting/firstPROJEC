@@ -529,3 +529,12 @@ function race(requestor_array, time_limit, throttle) {
                 } else if (number_of_pending < 1) {
 
 // There was no winner. Signal a failure.
+
+                    cancel(reason);
+                    callback(undefined, reason);
+                    callback = undefined;
+                }
+            },
+            function race_timeout() {
+                let reason = make_reason(
+                    factory_name,
