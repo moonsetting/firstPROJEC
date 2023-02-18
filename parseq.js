@@ -538,3 +538,13 @@ function race(requestor_array, time_limit, throttle) {
             function race_timeout() {
                 let reason = make_reason(
                     factory_name,
+                    "Timeout.",
+                    time_limit
+                );
+                cancel(reason);
+                callback(undefined, reason);
+                callback = undefined;
+            },
+            time_limit,
+            throttle
+        );
