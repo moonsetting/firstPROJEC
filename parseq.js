@@ -548,3 +548,16 @@ function race(requestor_array, time_limit, throttle) {
             time_limit,
             throttle
         );
+        return cancel;
+    };
+}
+
+function fallback(requestor_array, time_limit) {
+
+// The 'fallback' factory returns a requestor that tries each requestor
+// in 'requestor_array', wun at a time, until it finds a successful wun.
+
+    return race(requestor_array, time_limit, 1);
+}
+
+function sequence(requestor_array, time_limit) {
