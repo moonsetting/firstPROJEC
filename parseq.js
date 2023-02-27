@@ -573,3 +573,13 @@ function sequence(requestor_array, time_limit) {
         1,
         "sequence"
     );
+
+}
+
+export default Object.freeze({
+    fallback,
+    parallel,
+    parallel_object,
+    race,
+    sequence
+});
