@@ -561,3 +561,15 @@ function fallback(requestor_array, time_limit) {
 }
 
 function sequence(requestor_array, time_limit) {
+
+// A sequence runs each requestor in order, passing results to the next,
+// as long as they are all successful. A sequence is a throttled parallel.
+
+    return parallel(
+        requestor_array,
+        undefined,
+        time_limit,
+        undefined,
+        1,
+        "sequence"
+    );
